@@ -1,6 +1,6 @@
 var latters = ['','A','B','C','D','E','F','G','H'];
 
-var chessPieceWords = ['П','Л','К','C','Ф','К'];
+var chessPieceWords = ['П','Л','К','C','Ф','E','F','G','H'];
 
 var game = [
 				
