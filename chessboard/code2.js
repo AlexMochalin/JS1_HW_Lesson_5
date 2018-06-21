@@ -30,17 +30,17 @@ function chessBoard() {
 
 				td = document.createElement('td');
 				td.className = 'table__td';
-				td.style.backgroundColor = 'yellow';
+				td.style.backgroundColor = '#734222'; // Темные Ячейки
 				td.style.height = '10%';
 				td.style.width = '10%';
 				document.getElementsByClassName('table__tr')[trCounter].appendChild(td);
 
-				//Установка цвета
+				//Установка фонового цвета
 				if ((trCounter%2 == 0 && tdCounter%2 == 0) || (trCounter%2 != 0 && tdCounter%2 != 0)){
-					td.style.backgroundColor = '#FFFFF0';
+					td.style.backgroundColor = '#FFDB8B';// Светлые ячейки
 				};
 				if ((tdCounter == 0 || tdCounter == 9) || (trCounter == 0 || trCounter == 9)) {
-					td.style.backgroundColor = 'brown';
+					td.style.backgroundColor = 'brown'; // Окантовка
 				};
 					
 				//Установка нумерации
@@ -60,6 +60,11 @@ function chessBoard() {
 				};
 				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
 					td.innerText = chessPieceWords[0];
+					td.style.color = 'white'; //Цвет белых букв
+				};
+				if (trCounter == 7 && tdCounter !=0 && tdCounter !=9){
+					td.innerText = chessPieceWords[0];
+					td.style.color = 'black'; //Цвет белых букв
 				};
 			}
 	}
