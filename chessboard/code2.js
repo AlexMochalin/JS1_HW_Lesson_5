@@ -59,11 +59,11 @@ function chessBoard() {
 					td.innerText = latters[tdCounter];
 				};
 				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessPieceWords[0];
+					td.innerText = chessPawnWords[0];
 					td.style.color = 'white'; //Цвет белых букв
 				};
 				if (trCounter == 7 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessPieceWords[0];
+					td.innerText = chessPawnWords[0];
 					td.style.color = 'black'; //Цвет белых букв
 				};
 			}
