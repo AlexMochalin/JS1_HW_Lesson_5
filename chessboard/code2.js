@@ -24,7 +24,6 @@ function chessBoard() {
 		tr.className = 'table__tr';
 		tr.style.textAlign = 'center';
 		tr.style.fontSize = '25px';
-		tr.style.color = 'white';
 		document.getElementsByClassName('table')[0].appendChild(tr);
 	
 		for (var tdCounter=0; tdCounter < 10; tdCounter++){
@@ -38,32 +37,30 @@ function chessBoard() {
 
 				//Установка цвета
 				if ((trCounter%2 == 0 && tdCounter%2 == 0) || (trCounter%2 != 0 && tdCounter%2 != 0)){
-					td.style.backgroundColor = 'white';
-				}
-
+					td.style.backgroundColor = '#FFFFF0';
+				};
 				if ((tdCounter == 0 || tdCounter == 9) || (trCounter == 0 || trCounter == 9)) {
 					td.style.backgroundColor = 'brown';
-				}
+				};
 					
 				//Установка нумерации
 				if (tdCounter == 0 && trCounter != 0 && trCounter != 9){
 					td.innerText = trCounter;
 				}	
-	
 				else if (tdCounter == 9 && trCounter != 0 && trCounter != 9){
 					td.innerText = trCounter;
-				}
+				};
 
 				//Установка букв
 				if (trCounter == 0 && tdCounter != 0 && tdCounter != 9){
 					td.innerText = latters[tdCounter];
-					//td.display = 'table-cell';
-					//td.transform = 'rotate(90deg)';
 				}	
-	
 				else if (trCounter == 9 && tdCounter != 0 && tdCounter != 9){
 					td.innerText = latters[tdCounter];
-				}	
+				};
+				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
+					td.innerText = chessPieceWords[0];
+				};
 			}
 	}
 	return table;
