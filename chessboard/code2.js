@@ -58,6 +58,10 @@ function chessBoard() {
 				else if (trCounter == 9 && tdCounter != 0 && tdCounter != 9){
 					td.innerText = latters[tdCounter];
 				};
+				if (trCounter == 1 && tdCounter !=0 && tdCounter !=9){
+					td.innerText = chessPawnWords[tdCounter];
+					td.style.color = 'white'; //Цвет белых букв
+				};
 				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
 					td.innerText = chessPawnWords[0];
 					td.style.color = 'white'; //Цвет белых букв
