@@ -59,16 +59,20 @@ function chessBoard() {
 					td.innerText = latters[tdCounter];
 				};
 				if (trCounter == 1 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessPawnWords[tdCounter];
+					td.innerText = chessPawnWords[tdCounter];//Указание букв белых фигур
 					td.style.color = 'white'; //Цвет белых букв
 				};
 				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessPawnWords[0];
+					td.innerText = chessPawnWords[0];//Указание пешек белых фигур
 					td.style.color = 'white'; //Цвет белых букв
 				};
-				if (trCounter == 7 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessPawnWords[0];
+				if (trCounter == 8 && tdCounter !=0 && tdCounter !=9){
+					td.innerText = chessPawnWords[tdCounter];//Указание букв черных фигур
 					td.style.color = 'black'; //Цвет белых букв
+				};
+				if (trCounter == 7 && tdCounter !=0 && tdCounter !=9){
+					td.innerText = chessPawnWords[0];//Указание пешек черных фигур
+					td.style.color = 'black'; //Цвет черных букв
 				};
 			}
 	}
