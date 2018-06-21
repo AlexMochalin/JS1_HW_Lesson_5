@@ -33,6 +33,9 @@ function chessBoard() {
 				td.style.backgroundColor = '#734222'; // Темные Ячейки
 				td.style.height = '10%';
 				td.style.width = '10%';
+				td.style.lineHeight = '18px';
+				td.style.fontSize = '40px';
+				td.style.margin = '50px auto';
 				document.getElementsByClassName('table__tr')[trCounter].appendChild(td);
 
 				//Установка фонового цвета
@@ -40,7 +43,7 @@ function chessBoard() {
 					td.style.backgroundColor = '#FFDB8B';// Светлые ячейки
 				};
 				if ((tdCounter == 0 || tdCounter == 9) || (trCounter == 0 || trCounter == 9)) {
-					td.style.backgroundColor = 'brown'; // Окантовка
+					td.style.backgroundColor = 'brown'; // Цвет поля букв и цифр
 				};
 					
 				//Установка нумерации
@@ -59,20 +62,20 @@ function chessBoard() {
 					td.innerText = latters[tdCounter];
 				};
 				if (trCounter == 1 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessWords[tdCounter];//Указание букв белых фигур
-					td.style.color = 'white'; //Цвет белых букв
+					td.innerHTML = chessFiguresWhite[tdCounter];//Указание букв белых фигур
+					//td.style.color = 'white'; //Цвет белых букв
 				};
 				if (trCounter == 2 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessWords[0];//Указание пешек белых фигур
+					td.innerHTML = chessFiguresWhite[0];//Указание пешек белых фигур
 					td.style.color = 'white'; //Цвет белых букв
 				};
 				if (trCounter == 8 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessWords[tdCounter];//Указание букв черных фигур
+					td.innerHTML = chessFiguresBlack[tdCounter];//Указание букв черных фигур
 					td.style.color = 'black'; //Цвет белых букв
 				};
 				if (trCounter == 7 && tdCounter !=0 && tdCounter !=9){
-					td.innerText = chessWords[0];//Указание пешек черных фигур
-					td.style.color = 'black'; //Цвет черных букв
+					td.innerHTML = chessFiguresBlack[0];//Указание пешек черных фигур
+					//td.style.color = 'black'; //Цвет черных букв
 				};
 			}
 	}

@@ -24,7 +24,7 @@ function chessBoard() {
 		tr.className = 'table__tr';
 		tr.style.textAlign = 'center';
 		tr.style.fontSize = '25px';
-		tr.style.color = 'white';
+		//tr.style.color = 'white';
 		document.getElementsByClassName('table')[0].appendChild(tr);
 	
 		for (var tdCounter=0; tdCounter < 10; tdCounter++){
