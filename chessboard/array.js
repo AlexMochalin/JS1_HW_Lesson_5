@@ -1,5 +1,7 @@
 var latters = ['','A','B','C','D','E','F','G','H'];
 
+var chessPieceWords = ['П','Л','К','C','Ф','К'];
+
 var game = [
 				
 		{question:'Зимой и летом одним цветом, что это?',
